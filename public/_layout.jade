@@ -1,0 +1,41 @@
+!!!
+html
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="/assets/less/bootstrap.css")
+		script(src="https://trychec.com/js/embed.js")
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+		script(src="/assets/js/bootstrap.min.js")
+	body(data-spy="scroll", data-target="#main-navbar")
+		#main-navbar.navbar.navbar-fixed-top.clearHeader
+			.container
+				a.navbar-brand(href="#")
+					img(src="/assets/img/asthmasense-2.png", alt="asthmasense")
+				a.expanded-menu.pull-right(href="#")
+					img(src="/assets/img/menu-black.png", alt="menu")
+				ul.nav.navbar-nav.pull-right.hidden-xs
+					li
+						a(href="/") AirSonea
+					li
+						a(href="#") AsthmaSense Cloud
+					li
+						a(href="#") Blog
+					li
+						a(href="/getstarted") Get Started
+		!= yield
+		
+		footer.green
+			.container
+				.row
+					.col-sm-6
+						h3.pull-right Show Asthma Who's Boss
+					.col-sm-6
+						form.form-inline(role="form")
+							.form-group
+								input.form-control.input-sml(type="text", placeholder="Email")
+							button.btn.btn-default(type="submit") Submit
+
+		script(src="/assets/js/moment.js")
+		script(src="/assets/js/instafeed.js")
+		script(src="/assets/js/app.js")
+			
