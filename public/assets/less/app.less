@@ -190,7 +190,11 @@ footer{
 			margin-left: 10%;
 		}
 		.shot1{
-			background: ;
+			background: url(../img/clock-32.png) no-repeat;
+			height: 32px;
+			width: 32px;
+			border: none;
+			content: "test";
 		}
 		.shot2{
 			
@@ -349,8 +353,89 @@ footer{
 		}
 }
 
+/* Push Nav */
+
+.menu-trigger{
+	background: none;
+	border: none;
+	margin-top: 5px;
+	font-size: 24px;
+}
+.cbp-spmenu {
+	background: @gray-darker;
+	position: fixed;
+	padding-top: 60px;
+	h3{
+		color: #afdefa;
+		font-size: 1.9em;
+		padding: 20px;
+		margin: 0;
+		font-weight: 300;
+		background: #0d77b6;
+	}
+	a{
+		display: block;
+		color: #fff;
+		font-size: 1.1em;
+		font-weight: 300;
+		&:hover{
+			background: @green;
+		}
+		&:hover{
+			background: @green;
+			color: @white;
+			text-decoration: none;
+		}		
+	}
+}
+
+ 
+/* Orientation-dependent styles for the content of the menu */
+ 
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	box-shadow: inset -4px 0 4px -2px rgba(0,0,0,.5);
+	a{
+		border-bottom: 1px solid @gray;
+		padding: 1em;
+	}
+}  
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+	left: -240px;
+	&.cbp-spmenu-open {
+		left: 0px;
+	}
+}
 
 
+ 
+/* Push classes applied to the body */
+ 
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+.cbp-spmenu-push-toright {
+    left: 240px;
+}
+ 
+/* Transitions */
+ 
+.cbp-spmenu,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom{
+	margin-right: 0;
+}
 /* Blog Style */
 
 .main{

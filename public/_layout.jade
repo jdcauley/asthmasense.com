@@ -5,14 +5,16 @@ html
 		link(rel="stylesheet", href="/assets/less/bootstrap.css")
 		script(src="https://trychec.com/js/embed.js")
 		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-		script(src="/assets/js/bootstrap.min.js")
-	body(data-spy="scroll", data-target="#main-navbar")
+		script(src="/assets/js/modernizr.custom.js")
+		script(src="/assets/js/scrollorama.js")
+
+	body.cbp-spmenu-push
 		#main-navbar.navbar.navbar-fixed-top.clearHeader
 			.container
 				a.navbar-brand(href="#")
 					img(src="/assets/img/asthmasense-2.png", alt="asthmasense")
-				a.expanded-menu.pull-right(href="#")
-					img(src="/assets/img/menu-black.png", alt="menu")
+				button#showLeftPush.pull-right.menu-trigger
+					span.glyphicon.glyphicon-align-justify
 				ul.nav.navbar-nav.pull-right.hidden-xs
 					li
 						a(href="/") AirSonea
@@ -34,8 +36,12 @@ html
 							.form-group
 								input.form-control.input-sml(type="text", placeholder="Email")
 							button.btn.btn-default(type="submit") Submit
-
-		script(src="/assets/js/moment.js")
-		script(src="/assets/js/instafeed.js")
+		
+		nav#cbp-spmenu.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left
+			a(href="#") About
+			a(href="#") News
+			a(href="#") Videos
+		
+		script(src="/assets/js/bootstrap.min.js")
 		script(src="/assets/js/app.js")
 			
