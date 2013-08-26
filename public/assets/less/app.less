@@ -1,8 +1,8 @@
 @white: #ffffff;
-@green: #7CAD37;
+@green: #139527;
 @darkgreen: #1B7667;
 @black: #000000;
-
+/* Lighter Green Was 7CAD37 */
 /* Global Styles */
 
 
@@ -181,34 +181,6 @@ footer{
    border-right: 700px solid transparent; 
 }
 
-#feature-carousel{
-	.carousel-indicators{
-		top: 30px;
-		width: 70%;
-		li{
-			margin-right: 10%;
-			margin-left: 10%;
-		}
-		.shot1{
-			background: url(../img/clock-32.png) no-repeat;
-			height: 32px;
-			width: 32px;
-			border: none;
-			content: "test";
-		}
-		.shot2{
-			
-		}
-		.shot3{
-			
-		}
-		.shot{
-			
-		}
-	}
-}
-
-
 .circles{
 	margin-top: 40px;
 	h4{
@@ -322,6 +294,10 @@ footer{
 		width: 100%;
 		height: auto;
 	}
+	.appstore{
+		width: 100px; 
+		height: auto;
+}
 }
 .item{
 	.left{
@@ -333,9 +309,51 @@ footer{
 		width: 40%;
 	}
 }
+.asthmasense-indicators{
+	position: absolute;
+	left: 0;
+	z-index: 15;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	top: 30px;
+	width: 100%;
+	text-align: center;
+}
+.alerts-slide,.reminders-slide,.track-slide,.weather-slide{
+	display: inline-block;
+	color: #fff;
+	height: 120px;
+	width: 160px;
+	margin-left: 20px;
+	margin-right: 20px
+}
+
 .input-sml{
 	width: 250px;
 }
+.yt-player{
+  height: 360px;
+	display: inline-block;
+	border: none;
+}
+.yt-channel-list{
+	height: 360px;
+	overflow-x: scroll;
+	.yt-channel-list-inner{
+		width: 1500px;
+	}
+	.yt-channel-video{
+		display: inline-block;
+		img{
+			height: 180px;
+			width: auto;
+			padding: 5px;
+		}
+	}
+}
+
+
 
 /* Embeds */
 .embed-container{
@@ -504,19 +522,3 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

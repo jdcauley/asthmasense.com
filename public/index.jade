@@ -5,7 +5,8 @@ section
 				img(src="/assets/img/phone.png", alt="phone")
 				.carousel-caption.left
 					h2 AsthmaSense
-					p Anytime. Anywhere. AsthmaSense Cloud — The World’s Most Intelligent Asthma App is available for free at the Apple App Store, Google Play and the Amazon App Store..
+					p Anytime. Anywhere. AsthmaSense Cloud — The World’s Most Intelligent Asthma App is available for free at the Apple App Store, Google Play and the Amazon App Store.
+					img.appstore(src="assets/img/available-on-app-store.png", alt="available-on-app-store")
 			.item
 				img(src="/assets/img/ipad.png", alt="ipad")
 				.carousel-caption
@@ -110,14 +111,21 @@ section#intro.intro
 			span.icon-prev
 		a.right.carousel-control(href="#feature-carousel", data-slide="next")
 			span.icon-next
-		ol.carousel-indicators
-			li.shot1.active(data-target="#feature-carousel", data-slide-to="0")
-				p Link
-			li.shot2(data-target="#feature-carousel", data-slide-to="1")
-			li.shot3(data-target="#feature-carousel", data-slide-to="2")
-			li.shot4(data-target="#feature-carousel", data-slide-to="3")
+		.asthmasense-indicators
+			.alerts-slide(data-target="#feature-carousel", data-slide-to="0")			
+				img(src="assets/img/hollow-bolt.png", alt="hollow-bolt")
+				p Alert Status
+			.reminders-slide(data-target="#feature-carousel", data-slide-to="1")
+				img(src="assets/img/hollow-clock.png", alt="hollow-clock")
+				p Reminders
+			.track-slide(data-target="#feature-carousel", data-slide-to="2")
+				img(src="assets/img/hollow-location.png", alt="hollow-location")
+				p Track & Measure
+			.weather-slide(data-target="#feature-carousel", data-slide-to="3")
+				img(src="assets/img/hollow-cloud.png", alt="hollow-cloud") 
+				p Weather with a Purpose	
+
 			
-p(data-target="#feature-carousel", data-slide-to="2") Linked 				
 				
 section.manage
 	.container
@@ -134,16 +142,7 @@ section.videos
 			.col-sm-12
 				h2.center Videos
 				h4.center Aenean et dignissim dolor, vel bibendum ligula.
-				
-			.col-sm-4
-				.embed-container
-					<iframe width="640" height="360" src="//www.youtube.com/embed/vkqZ_urkje8" frameborder="0" allowfullscreen></iframe>
-			.col-sm-4
-				.embed-container
-					<iframe width="640" height="480" src="//www.youtube.com/embed/bZGLCBFSNck" frameborder="0" allowfullscreen></iframe>
-			.col-sm-4
-				.embed-container
-					<iframe width="640" height="360" src="//www.youtube.com/embed/p8UU1EE-6Ik" frameborder="0" allowfullscreen></iframe>
+			#ytChanPlayer.ytChanPlayer
 					
 section.social
 	.container
