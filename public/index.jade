@@ -1,176 +1,163 @@
-section
+section.head
 	#header-carousel.carousel.slide
 		.carousel-inner
 			.item.active
-				img(src="/assets/img/phone.png", alt="phone")
+				img(src="assets/img/phone.png", alt="phone")
 				.carousel-caption.left
 					h2 AsthmaSense
-					p Anytime. Anywhere. AsthmaSense Cloud — The World’s Most Intelligent Asthma App is available for free at the Apple App Store, Google Play and the Amazon App Store.
-					img.appstore(src="assets/img/available-on-app-store.png", alt="available-on-app-store")
+					p Anytime. Anywhere. AsthmaSense Cloud — The World’s Most Intelligent Asthma App is available for free.
+					img.appstore(/src="assets/img/available-on-app-store.png", alt="available-on-app-store")
 			.item
-				img(src="/assets/img/ipad.png", alt="ipad")
+				img(src="assets/img/ipad.png", alt="ipad")
 				.carousel-caption
 			.item				
-				img(src="/assets/img/macbookair.png", alt="macbookair")
+				img(src="assets/img/macbookair.png", alt="macbookair")
 				.carousel-caption
 		a.left.carousel-control(href="#header-carousel", data-slide="prev")
 			span.icon-prev
 		a.right.carousel-control(href="#header-carousel", data-slide="next")
 			span.icon-next
-		ol.carousel-indicators
+		ol.carousel-indicators.hidden-xs
 			li.active(data-target="#header-carousel", data-slide-to="0")
 			li(data-target="#header-carousel", data-slide-to="1")
 			li(data-target="#header-carousel", data-slide-to="2")
-			
-	.container#circles.circles
-		.row
-			.col-sm-4
-				.circle
-					img.air(src="/assets/img/airsonea.png")
-				h4.center Airsonea
-				p.center Proin ut scelerisque mi. Mauris sit amet arcu ultrices ipsum dapibus varius in sit amet dui. Aenean egestas hendrerit egestas. Aenean et dignissim dolor, vel bibendum ligula.
-				a.center.plus(href="#myModal", data-toggle="modal") &plus;
-				#myModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
-					.modal-dialog
-						.modal-content
-							.modal-header
-								button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
-								h4.modal-title Modal Title
-							.modal-body
-								p Body Content
-							.modal-footer
-								button.btn.btn-default(type="button", data-dismiss="modal") Close
-								button.btn.btn-primary(type="button", data-dismiss="modal") Save Changes
-			.col-sm-4
-				.circle
-					img.as(src="/assets/img/sense.png")
-				h4.center AsthmaSense
-				p.center Proin ut scelerisque mi. Mauris sit amet arcu ultrices ipsum dapibus varius in sit amet dui. Aenean egestas hendrerit egestas. Aenean et dignissim dolor, vel bibendum ligula.
-				a.center.plus(href="#modalTwo", data-toggle="modal") &plus;
-				#modalTwo.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
-					.modal-dialog
-						.modal-content
-							.modal-header
-								button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
-								h4.modal-title Modal Title
-							.modal-body
-								p Body Content
-							.modal-footer
-								button.btn.btn-default(type="button", data-dismiss="modal") Close
-								button.btn.btn-primary(type="button", data-dismiss="modal") Save Changes
-			.col-sm-4
-				.circle
-					img.blog(src="/assets/img/blog.png", alt="blog")
-				h4.center Blog
-				p.center Proin ut scelerisque mi. Mauris sit amet arcu ultrices ipsum dapibus varius in sit amet dui. Aenean egestas hendrerit egestas. Aenean et dignissim dolor, vel bibendum ligula.
-				a.center.plus(href="#modalThree", data-toggle="modal") &plus;
-				#modalThree.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
-					.modal-dialog
-						.modal-content
-							.modal-header
-								button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
-								h4.modal-title Modal Title
-							.modal-body
-								p Body Content
-							.modal-footer
-								button.btn.btn-default(type="button", data-dismiss="modal") Close
-								button.btn.btn-primary(type="button", data-dismiss="modal") Save Changes
 
-section#intro.intro
-	#feature-carousel.carousel.slide
-		.carousel-inner
-			.item.active
-				img(src="/assets/img/breezi_placeit-1.png", alt="phone")
-				.carousel-caption.left
-					h1 Alert Status
-					p Receive alerts when your asthma risk changes or may not be well controlled*. If your risk for an asthma attack is high, easily access all emergency contact information with one tap.
-					h3 Did you know?
-					p You can control your asthma by knowing the warning signs of an asthma attack. Making sure your asthma stays well controlled can allow you to sleep better, not miss as much work or school, take part in physical activities and most important of all, not have to go to the hospital.
-			.item
-				img(src="/assets/img/breezi_placeit-2.png", alt="ipad")
-				.carousel-caption.left
-					h1 Reminders for Medications:
-					p Set reminds for each user for medication use and peak flow testing. Receive the alerts you need to stay on top of your asthma.
-					h3 Did you know?
-					p Most children and adults diagnosed with asthma do not keep their asthma under control, mostly due to not properly taking medications when prescribed and proper peak flow testing.
-			.item	
-				img(src="/assets/img/breezi_placeit-3.png", alt="macbookair")
-				.carousel-caption.left
-					h1 Track & Measure
-					p Track symptoms, triggers, lung function measurements and medication usage. Review one month of records to properly adhere to your treatment plan and manage your asthma.
-					h3 Did you know?
-					p The goal of asthma treatment to control the disease is by adhering to an treatment plan that you created with your doctor. Take asthma medicines as prescribed, along with tracking symptoms and triggers can help you play an active role in managing your asthma.
-			.item
-				img(src="/assets/img/breezi_placeit.png", alt="macbookair")
-				.carousel-caption.left
-					h1 Weather with a Purpose
-					p Keep a heads up on the weather to better prepare you for your day. Know if the pollen count is high that day or if dark skies are moving in so you can better manage your asthma.
-					h3 Did you know?
-					p It's not just pollen to watching for -- Days with high humidity, especially cold days, and thunderstorms are known factors in alleviating an asthmatic's risk of an attack. Keeping the weather and your asthma symptoms and triggers in one smartphone app can help you see the connection between your asthma risk, triggers and the weather in your area. 
-		a.left.carousel-control(href="#feature-carousel", data-slide="prev")
-			span.icon-prev
-		a.right.carousel-control(href="#feature-carousel", data-slide="next")
-			span.icon-next
-		.asthmasense-indicators
-			.alerts-slide(data-target="#feature-carousel", data-slide-to="0")			
-				img(src="assets/img/hollow-bolt.png", alt="hollow-bolt")
-				p Alert Status
-			.reminders-slide(data-target="#feature-carousel", data-slide-to="1")
-				img(src="assets/img/hollow-clock.png", alt="hollow-clock")
-				p Reminders
-			.track-slide(data-target="#feature-carousel", data-slide-to="2")
-				img(src="assets/img/hollow-location.png", alt="hollow-location")
-				p Track & Measure
-			.weather-slide(data-target="#feature-carousel", data-slide-to="3")
-				img(src="assets/img/hollow-cloud.png", alt="hollow-cloud") 
-				p Weather with a Purpose	
-
-			
-				
-section.manage
+section#circles.circles			
 	.container
 		.row
-			.col-sm-4
-				a.center.btn.btn-success(href="#") Download	Now
-			.col-sm-8
-				h2 Management at your Fingertips
-				p Proin ut scelerisque mi. Mauris sit amet arcu ultrices ipsum dapibus varius in sit amet dui. Aenean egestas hendrerit egestas. Aenean et dignissim dolor, vel bibendum ligula. Vestibulum in arcu eu neque rutrum tincidunt a in purus. Fusce varius cursus porta. Aliquam odio massa, vulputate eget neque quis, sagittis tristique felis.
+			.col-sm-4.center
+				img.siteicons(src="assets/img/AirsoneaLogoround.png", alt="AirsoneaLogoround")
+				h4 AirSonea&trade;
+				p With accompanying smartphone apps, AirSonea detects and measures wheeze, a primary sign of asthma.
+				a.plus(href="http://airsonea.com") &plus;
+			.col-sm-4.center
+				img.siteicons(src="assets/img/AsthmaSenseLogoround.png", alt="Asthmasense")
+				h4 AsthmaSense&reg; Cloud
+				p Set reminders for meds and measurements, record symptoms and triggers, and track insights.
+				a.plus(href="http://asthmasense.com") &plus;
+			.col-sm-4.center
+				img.siteicons(src="assets/img/BlogLogo.png", alt="Blog")
+				h4 Blog
+				p Information that is medically sound. Advice that is easy to follow. And information anyone can use to take action.
+				a.plus(href="http://blog.asthmasense.com") &plus;
+								
+section.security.hidden-xs
+	.container
+		#feat-carousel.carousel.slide
+			.carousel-inner
+				.item.active.slide-icons
+					.row
+						.col-sm-4.center
+							img(src="assets/img/WheezeWhite92.png", alt="Wheeze")
+							h4 Wheeze
+							p.hidden-xs Objectively detect, measure and track your WheezeRATE.  
+							a.plus(href="#wheeze", data-toggle="modal") &plus;			
+						.col-sm-4.center
+							img(src="assets/img/AlertWhite92.png", alt="AlertWhite92")
+							h4 Alert Status
+							p.hidden-xs Receive alerts when your asthma risk changes or may not be well controlled.   
+							a.plus(href="#alertstatus", data-toggle="modal") &plus;		
+						.col-sm-4.center
+							img(src="assets/img/RemindersWhite92.png", alt="RemindersWhite92")
+							h4 Medication Reminders
+							p.hidden-xs Set reminders for each user for medication use and peak&nbsp;flow testing.    
+							a.plus(href="#reminders", data-toggle="modal") &plus;		
+			
+				.item.slide-icons
+					.row
+						.col-sm-4.center
+							img(src="assets/img/measure_icon.png", alt="menu-black")
+							h4 Track & Measure
+							p.hidden-xs Track symptoms, triggers, lung function measurements and medication usage.  
+							a.plus(href="#track", data-toggle="modal") &plus;			
+						.col-sm-4.center
+							img(src="assets/img/accuratedata_icon.png", alt="accuratedata_icon")
+							h4 Accurate Data
+							p.hidden-xs Close the loop between your asthma and physician.    
+							a.plus(href="#accuratedata", data-toggle="modal") &plus;		
+						.col-sm-4.center
+							img(src="assets/img/cloud_icon-2.png", alt="cloud_icon-2")
+							h4 Seamless Monitoring
+							p.hidden-xs AirSonea and AsthmaSense Cloud are convenient and easy to use.    
+							a.plus(href="#seamless", data-toggle="modal") &plus;	
 
-section.videos
+			ol.carousel-indicators
+				li.active(data-target="#feat-carousel", data-slide-to="0")
+				li(data-target="#feat-carousel", data-slide-to="1")
+
+section.videos.hidden-xs
 	.container
 		.row
 			.col-sm-12
 				h2.center Videos
-				h4.center Aenean et dignissim dolor, vel bibendum ligula.
+				h4.center Learn More About AsthmaSense
 			#ytChanPlayer.ytChanPlayer
+		.row.more-yt
+			.col-sm-12.center
+				a.btn.btn-primary(href="http://youtube.com/SoundAsthma", target="_blank") More on YouTube
 					
 section.social
 	.container
 		.row
 			.col-sm-12
-				h2.center Asthmagram
-				h4.center Aenean et dignissim dolor, vel bibendum ligula.
+				img.center(src="assets/img/asthmagram_logo.png", alt="AsthmagramLogo")
+				h4.center Our Instagram&trade; campaign is inspiring others and helping to #BeatAsthma everyday!
 		#asthmagram.row
-			
-		.row.connect		
-			.col-sm-4
-				h3.center Connect with Us
-			.col-sm-8
-				ul.social-icons
-					li
-						a(href="http://facebook.com/SoundAsthma", target="_blank")
-							img(alt="facebook", src="/assets/img/fb.png")
-					li
-						a(href="http://twitter.com/SoundAsthma", target="_blank")
-							img(alt="twitter", src="/assets/img/tt.png")
-					li
-						a(href="http://pinterest.com/SoundAsthma", target="_blank")
-							img(alt="pinterest", src="/assets/img/pt.png")
-					li
-						a(href="http://instagram.com/SoundAsthma", target="_blank")
-							img(alt="instagram", src="/assets/img/ig.png")
-					li
-						a(href="http://youtube.com/SoundAsthma", target="_blank")
-							img(alt="youtube", src="/assets/img/yt.png")
+		.row
+			.col-sm-12.center
+				a.btn.btn-primary(href="http://asthmagr.am", target="_blank") More on Asthmagr.am
 
+#wheeze.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+				h4.modal-title Did you know?
+			.modal-body
+				p When used with AirSonea and AsthmaSense Cloud, the ability to utilize your WheezeRATE has never been so useful evaluating your asthma risk.
+				
+#alertstatus.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+				h4.modal-title Did you know?
+			.modal-body
+				p You can control your asthma by knowing the warning signs of an asthma attack. Making sure your asthma stays well controlled can allow you to sleep better, not miss as much work or school, take part in physical activities and most important of all, not have to go to the hospital.
+
+#reminders.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+				h4.modal-title Did you know?
+			.modal-body
+				p Most children and adults diagnosed with asthma do not keep their asthma under control, mostly due to not properly taking medications when prescribed and proper peak flow testing. 
+				
+#track.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+				h4.modal-title Did you know?
+			.modal-body
+				p The goal of asthma treatment to control the disease is by adhering to a treatment plan that you created with your doctor. Take asthma medicines as prescribed, along with tracking symptoms and triggers can help you play an active role in managing your asthma. 
+				
+#accuratedata.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+				h4.modal-title Did you know?
+			.modal-body
+				p By taking the guesswork out of your symptoms, triggers and events, you can manage your asthma and give accurate data to your physician so your treatment plan can work for you and not the other way around.
+				
+#seamless.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+				h4.modal-title Did you know?
+			.modal-body
+				p An estimated 235 million people worldwide suffer from asthma. There are more than 250,000 asthma-related fatalities each year. Asthma deaths are related to lack of proper treatment. Better monitoring is critical to successful asthma management. 
 	
