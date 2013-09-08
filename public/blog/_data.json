@@ -1,23 +1,23 @@
 {
-  asthma-and-running: {
-    title: "Asthma and Running",
-    date: "August 8, 2013",
-    category: "Category Name",
-    comment_count: "10 comments",
-    header: "/assets/img/breezi_placeit-1.png"
+  "asthma-and-running": {
+    "title": "Asthma and Running",
+    "date": "August 8, 2013",
+    "category": "Category Name",
+    "comment_count": "10 comments",
+    "header": "/assets/img/breezi_placeit-1.png"
   },
-  asthma-and-running-one: {
-    title: "Asthma and Running",
-    date: "August 8, 2013",
-    category: "Category Name",
-    comment_count: "10 comments",
-    header: "/assets/img/breezi_placeit-1.png"
+  "asthma-and-running-one": {
+    "title": "Asthma and Running",
+    "date": "August 8, 2013",
+    "category": "Category Name",
+    "comment_count": "10 comments",
+    "header": "/assets/img/breezi_placeit-1.png"
   },
-  asthma-and-running-two: {
-    title: "Asthma and Running",
-    date: "August 8, 2013",
-    category: "Category Name",
-    comment_count: "10 comments",
-    header: "/assets/img/breezi_placeit-1.png"
+  "asthma-and-running-two": {
+    "title": "Asthma and Running",
+    "date": "August 8, 2013",
+    "category": "Category Name",
+    "comment_count": "10 comments",
+    "header": "/assets/img/breezi_placeit-1.png"
   }
 }
